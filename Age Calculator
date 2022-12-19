@@ -1,0 +1,26 @@
+currentyear = 2021
+birthyear = input("Enter year of Birth (YYYY): ")
+if birthyear.isdigit() and len(birthyear) == 4:
+    birthyear = int(birthyear)
+    birthyear = currentyear - birthyear
+    print(f"User's age is {birthyear}")
+else:
+    print(f"{birthyear} is invalid. Please enter four digit integer. ")
+
+
+
+brthyr = input(f"Enter your year of birth (YYYY): ")
+if brthyr.isdigit() and int(brthyr) < 2021:
+    if len(brthyr) == 2:
+        century = input("Please enter century 19 or 20: ")
+        if century == "19" or century == "20":
+            brthyr = century + brthyr
+            brthyr = int(brthyr)
+            user_age = 2021 - brthyr
+            print(f"Your age is {user_age}")
+        else:
+            print(f"Invalid {century}")()
+    else:
+        print(f"")
+else:
+    print(f"{brthyr} is not a valid year. ")
