@@ -1,0 +1,13 @@
+import names
+
+a = []
+r = []
+
+for number in range(1,1001):
+    tempname = names.get_first_name('female')
+    if tempname.startswith('A'):
+        a.append(tempname)
+    elif tempname.startswith('R'):
+        r.append(tempname)
+print(f"{a}\n{len(a)}")
+print(f"{r}\n{len(r)}")
