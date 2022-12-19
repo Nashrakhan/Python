@@ -1,0 +1,11 @@
+base_amount = input("Enter Base Amount of the Bill: ")
+tip_percent = input("Enter % of Tip: ")
+if base_amount.isdigit() and tip_percent.isdigit():
+    base_amount = int(base_amount)
+    tip_in_dollars = (int(tip_percent)/100) * (base_amount)
+    final_bill = base_amount + tip_in_dollars
+    print(f"Your original bill is {base_amount}. ")
+    print(f"Your final bill with {tip_percent} is {final_bill}. ")
+
+else:
+    print(f"{base_amount} or {tip_percent} is Invalid! ")
