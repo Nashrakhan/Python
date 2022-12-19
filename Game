@@ -1,0 +1,20 @@
+helloworld = input(f"!_________________Hello World___________________!")
+note = input(f" Note:      Please use Small Letter.     (Press Enter to Continue.)")
+name = input(f"Please Enter your Name: ")
+print(f" Answer the Following Quizes")
+game1 = input(f"What is a Synonyms for a word 'Happy': ")
+if game1 == "glad":
+    print(f"Congratulations!!! You Cleared Level 1")
+else:
+    print(f"Incorrect! Please try again ^_^ ")
+game2 = input(f"What is Antonyms for word 'Ugly': ")
+if game2 == "beautiful":
+    print(f"Congratulations!!! You Cleared Level 2")
+else:
+    print(f"Incorrect! Please try again ^_^ ")
+game3 = input(f" What is Antonyms for 'Old': ")
+if game3 == "new":
+    print(f"Congratulations!!! You Cleared Level 3")
+else:
+    print(f"Incorrect! Please try again ^_^ ")
+won = input(f"CONGRATULATIONS!!! {name} WON THE GOLDEN CROWN!!! *_* ")
