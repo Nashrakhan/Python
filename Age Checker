@@ -1,0 +1,13 @@
+age = input(" Enter your age: ")
+if age.isdigit():
+    age = int(age)
+    if age>=18:
+        print("You are an adult")
+    elif 10 <= age < 18:
+        print("You are a teenager")
+    elif 3 < age <= 9:
+        print("You are a child")
+    else:
+        print("You are a baby")
+else:
+    print(f" {age} is not a digit. Please enter integer values")
