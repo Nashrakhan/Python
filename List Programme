@@ -1,0 +1,7 @@
+names = []
+
+for number in range(1, 11):
+    name = input("Please Enter a Name:   ")
+    names.append(name)
+
+print(names)
