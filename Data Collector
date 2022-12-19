@@ -1,0 +1,36 @@
+first_name = input("First Name: ")
+last_name = input("Last Name: ")
+user_phone = input("Contact No.: ")
+user_phone = int(user_phone)
+user_email = input("Email-Id: ")
+user_address = input("Address: ")
+user_city = input("City: ")
+user_state = input("State: ")
+user_country = input("Country: ")
+age = input("Age: ")
+if age.isdigit():
+    age = int(age)
+    if age>18:
+        print(f"You are an Adult.")
+    elif age>=10 and age<=18:
+        print(f"You are a Teenager.")
+    elif age>10:
+        print(f"You are a Child.")
+else:
+    print(f"{age} is not an Integer. Please enter an Integer value.")
+
+birthyear = input("Enter your Year of birth (YYYY): ")
+if birthyear.isdigit() and int(birthyear) < 2021:
+   if len(birthyear) == 2:
+       centuary = print(f"Please enter Centuary 19 or 20: ")
+       if centuary == "19" or "20":
+       birthyear = centuary + birthyear
+       birthyear = int(birthyear)
+       age = 2021 - birthyear
+       print(f"Your Age is {age}")
+   else:
+       print(f"Invalid!")
+else:
+    print(f"{birthyear}  is not a valid year")
+
+
