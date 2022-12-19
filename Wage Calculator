@@ -1,0 +1,13 @@
+hourly_salary = input("Enter your Hourly Wage: ")
+hours_per_week = input("Please enter how many hours you work in a week: ")
+if hourly_salary.isdigit()  and hours_per_week.isdigit():
+    print(f"You work {hours_per_week} hours every week with a "
+          f"hourly wage of ${hourly_salary}. ")
+    one_week_wage = int(hours_per_week) * int(hourly_salary )
+    monthly_salary = one_week_wage * 4
+    yearly_salary = monthly_salary  * 12
+    print(f"There are 12 months per year. So your yearly wage is ${yearly_salary} ")
+
+
+else:
+    print(f"Invalid {hourly_salary} wage or {hours_per_week} hours per week entered")
