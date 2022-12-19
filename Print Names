@@ -1,0 +1,11 @@
+names = ["Nashra", "Gausiya", "Asif", "Sabrin", "Taiba", "Ismail", "Mohammed", "Abdullah", "Nabila", "Taiba"]
+
+
+l = len(names)
+# print(l)
+
+                                                    #(To Uncommon(#) the value use Control(Ctrl) and Slash(/))
+
+for index in range(0, l):
+#  print(index)
+   print(f"Index {index} has value {names[index]} ")
